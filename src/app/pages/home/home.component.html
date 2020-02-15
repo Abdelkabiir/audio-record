@@ -1,6 +1,10 @@
 
 <div class="flex white-border">
-  <div class="round-button" (click)="record()" >
-    Talk nigga !
+  <div
+    *ngIf="!isRecording"
+    class="round-button"
+    (click)="record()">
+    START
   </div>
+  <app-record (stopEvent)="recordingStoped()" *ngIf="isRecording" class="flex total-size"></app-record>
 </div>

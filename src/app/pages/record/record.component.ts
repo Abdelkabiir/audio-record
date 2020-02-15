@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-record',
@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./record.component.scss'],
 })
 export class RecordComponent implements OnInit {
-
+  @Output() stopEvent: EventEmitter<any> = new EventEmitter();
   constructor() { }
 
   ngOnInit() {}
 
+  stop() {
+    this.stopEvent.emit(null);
+  }
 }

@@ -7,13 +7,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-
+  isRecording = false;
   constructor(private router: Router) {
   }
 
   ngOnInit() {}
 
   record() {
-    this.router.navigate(['record']);
+    // this.router.navigate(['record']);
+    this.isRecording = true;
+  }
+
+  recordingStoped() {
+    this.isRecording = false;
   }
 }

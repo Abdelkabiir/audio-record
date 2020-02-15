@@ -1,11 +1,23 @@
 @keyframes blinker {
-    50% {
-      opacity: 0;
-    }
+  50% {
+    opacity: 0;
   }
+}
 
 div.animated {
-    font-size: 20px;
-    color: #edeff1;
-    animation: blinker 2s linear infinite;
+  font-size: 20px;
+  color: #edeff1;
+  animation: blinker 2s linear infinite;
+}
+
+.stop-button {
+  height: 100px;
+  width: 100px;
+  background-color: #bd0d0d;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.75)
 }

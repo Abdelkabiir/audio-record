@@ -33,12 +33,16 @@
     align-items: center;
 }
 
+.total-size {
+    height: 100%;
+    width: 100%;
+}
+
 .flex {
-    // height: 100%;
-    flex-direction: row;
+    flex-direction: column;
     box-sizing: border-box;
     display: flex;
-    place-content: center;
+    place-content: space-evenly;
     align-items: center;
 }
 
