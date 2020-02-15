@@ -1,0 +1,11 @@
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+div.animated {
+    font-size: 20px;
+    color: #edeff1;
+    animation: blinker 2s linear infinite;
+}
