@@ -1,0 +1,12 @@
+  <div class="profile flex">
+    <ion-icon name="person-circle-outline" class="big-icon"></ion-icon>
+    <div class="owner-name">Abdelkabir</div>
+  </div>
+  <div class="routes">
+    <div
+      class="route flex-row"
+      *ngFor="let route of routes">
+      <ion-icon [name]="route.icon"></ion-icon>
+      <div class="route-name">{{route.name}}</div>
+    </div>
+  </div>

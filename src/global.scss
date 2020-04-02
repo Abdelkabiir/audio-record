@@ -31,6 +31,9 @@
     place-content: center;
     -webkit-box-align: center;
     align-items: center;
+
+    border: 1px solid white;
+    margin: 4px;
 }
 
 .total-size {
@@ -46,8 +49,25 @@
     align-items: center;
 }
 
+.flex-row {
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .white-border {
     height: 95%;
     width: 95%;
     border: 1px solid white;
+}
+
+.menu-button {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    display: block;
+    color: aliceblue;
 }

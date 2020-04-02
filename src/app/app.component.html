@@ -1,3 +1,9 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" menuId="first" contentId="content1">
+    <app-menu [routes]="menuRoutes"></app-menu>
+  </ion-menu>
+
+  <ion-router-outlet id="content1"></ion-router-outlet>
+  <!-- <ion-nav id="content1" [root]="rootPage"></ion-nav> -->
+
 </ion-app>

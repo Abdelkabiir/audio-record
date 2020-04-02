@@ -1,10 +1,17 @@
+<div class="menu-button">
+  <ion-menu-button></ion-menu-button>
+</div>
 
-<div class="flex white-border">
+<div class="flex total-size">
   <div
     *ngIf="!isRecording"
     class="round-button"
     (click)="record()">
     START
   </div>
-  <app-record (stopEvent)="recordingStoped()" *ngIf="isRecording" class="flex total-size"></app-record>
+  <app-record 
+    (stopEvent)="recordingStoped()"
+    *ngIf="isRecording"
+    class="flex total-size">
+  </app-record>
 </div>
